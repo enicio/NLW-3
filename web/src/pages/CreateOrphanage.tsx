@@ -7,7 +7,7 @@ import { FiArrowLeft, FiPlus } from "react-icons/fi";
 import '../styles/pages/create-orphanage.css';
 import Sidebar from "../components/sidebar";
 import mapIcon from "../utils/mapicon";
-import { stringify } from "querystring";
+//import { stringify } from "querystring";
 import api from "../services/api";
 import { useHistory } from "react-router-dom";
 
@@ -112,7 +112,7 @@ export default function CreateOrphanage() {
                 url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
 
-                {position.latitude != 0 && (
+                {position.latitude !== 0 && (
                   <Marker 
                     interactive={false}
                     icon={mapIcon}
@@ -155,9 +155,6 @@ export default function CreateOrphanage() {
                     <img key={image} src={image} alt={name}/>
                   )
                 })}
-
-
-
 
                 <label htmlFor="image[]" className="new-image">
                   <FiPlus size={24} color="#15b6d6" />

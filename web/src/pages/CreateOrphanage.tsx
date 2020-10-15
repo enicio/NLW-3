@@ -140,7 +140,7 @@ export default function CreateOrphanage() {
               id="name" 
               maxLength={300} 
               value={about} 
-              onChange={event => setAbout(event.target.value)} />
+              onChange={event => setAbout(event.target.value)} 
               />
             </div>
 
@@ -177,7 +177,7 @@ export default function CreateOrphanage() {
               <textarea 
               id="instructions"
               value={instructions} 
-              onChange={event => setInstructions(event.target.value)} />
+              onChange={event => setInstructions(event.target.value)} 
               />
             </div>
 
@@ -186,7 +186,7 @@ export default function CreateOrphanage() {
               <input 
               id="opening_hours" 
               value={opening_hours} 
-              onChange={event => setOpeningHours(event.target.value)} />
+              onChange={event => setOpeningHours(event.target.value)} 
               />
             </div>
 
